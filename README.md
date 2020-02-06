@@ -1,20 +1,20 @@
 dotty.g8: simple dotty-compiled sbt project template
 =================
-[![Build Status](https://travis-ci.org/lampepfl/dotty-staging.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-staging.g8)
+[![Build Status](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8)
 
-A [Giter8][g8] template for a minimal [Dotty] staging project.
+A [Giter8][g8] template for a minimal [Dotty] TASTy Inspector project.
 
 Template usage
 --------------
 Using `sbt` version `1.1.5+`, do:
 ```
-sbt new lampepfl/dotty-staging.g8
+sbt new lampepfl/dotty-tasty-inspector.g8
 ```
 in the folder where you want to clone the template.
 
 Template license
 ----------------
-Written in 2018 by [Nicolas Stucki]
+Written in 2020 by [Nicolas Stucki]
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
 and neighboring rights to this template to the public domain worldwide.
