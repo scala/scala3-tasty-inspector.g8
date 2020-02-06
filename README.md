@@ -1,4 +1,4 @@
-dotty.g8: simple dotty-compiled sbt project template
+dotty-tasty-inspector.g8: TASTy Inspector template project
 =================
 [![Build Status](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8)
 
