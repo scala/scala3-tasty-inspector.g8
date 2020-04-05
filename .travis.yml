@@ -14,7 +14,7 @@ script:
   - sbt -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M test
 
   - pushd target/sbt-test/dotty-tasty-inspector-template/scripted
-  - sbt +inspector/run +test
+  - sbt inspector/run test
   - popd
 
   # Tricks to avoid unnecessary cache updates
