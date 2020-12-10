@@ -1,3 +1,4 @@
+package inspector
 
 import scala.tasty.inspector._
 
@@ -13,7 +14,7 @@ class InspectorTest {
         |    def hello(name: scala.Predef.String): scala.Predef.String = "Hello ".+(name)
         |  }
         |}""".stripMargin, 
-      Inspector.showCodeOf("lib.Greetings")
+      Inspector.showCodeOf("lib/target/scala-3.0.0-M2/classes/lib/Greetings.tasty")
     )
 
   }

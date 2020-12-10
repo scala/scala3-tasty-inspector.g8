@@ -1,4 +1,4 @@
-val dottyVersion = "0.27.0-RC1"
+val dottyVersion = "3.0.0-M2"
 
 lazy val lib = project
   .in(file("lib"))
@@ -20,7 +20,7 @@ lazy val inspector = project
     scalaVersion := dottyVersion,
 
     libraryDependencies ++= Seq(
-      "ch.epfl.lamp" %% "dotty-tasty-inspector" % dottyVersion,
+      "org.scala-lang" %% "scala3-tasty-inspector" % dottyVersion,
       "com.novocode" % "junit-interface" % "0.11" % "test"
     )
   )
