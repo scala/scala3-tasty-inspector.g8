@@ -13,7 +13,7 @@ script:
   ## This runs the template with the default parameters, and runs test within the templated app.
   - sbt -Dfile.encoding=UTF8 -J-XX:ReservedCodeCacheSize=256M test
 
-  - pushd target/sbt-test/dotty-tasty-inspector-template/scripted
+  - pushd target/sbt-test/scala3-tasty-inspector-template/scripted
   - sbt inspector/run test
   - popd
 
