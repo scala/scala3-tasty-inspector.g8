@@ -3,21 +3,22 @@ package inspector
 
 import scala.quoted._
 
-import scala.tasty.inspector.TastyInspector
+import scala.tasty.inspector._
 
 object Inspector {
 
   def showCodeOf(tastyFile: String): String = {
     var tastyStr: String = null
-    val inspector = new TastyInspector {
-      protected def processCompilationUnit(using Quotes)(root: quotes.reflect.Tree): Unit = {
+    val inspector = new Inspector {
+      def inspect(using Quotes)(tastys: List[Tasty[quotes.type]]): Unit = {
         import quotes.reflect._
-        val projectDir = new java.io.File( "." ).getCanonicalPath() + java.io.File.separator // To cleanup the paths in @SourceFile
-        tastyStr = root.show.replace(projectDir, "")
+        for tasty <- tastys do
+          val projectDir = new java.io.File( "." ).getCanonicalPath() + java.io.File.separator // To cleanup the paths in @SourceFile
+          tastyStr = tasty.ast.show.replace(projectDir, "")
       }
     }
-    inspector.inspectTastyFiles(List(tastyFile))
+    TastyInspector.inspectTastyFiles(List(tastyFile))(inspector)
     tastyStr
   }
-  
+
 }

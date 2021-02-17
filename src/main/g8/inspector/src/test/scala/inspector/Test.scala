@@ -13,8 +13,8 @@ class InspectorTest {
         |  @scala.annotation.internal.SourceFile("lib/src/main/scala/lib/Greetings.scala") object Greetings {
         |    def hello(name: scala.Predef.String): scala.Predef.String = "Hello ".+(name)
         |  }
-        |}""".stripMargin, 
-      Inspector.showCodeOf("lib/target/scala-3.0.0-M3/classes/lib/Greetings.tasty")
+        |}""".stripMargin,
+      Inspector.showCodeOf("lib/target/scala-3.0.0-RC1/classes/lib/Greetings.tasty")
     )
 
   }
