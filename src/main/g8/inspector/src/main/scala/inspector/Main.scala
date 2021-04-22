@@ -3,6 +3,6 @@ package inspector
 import scala.quoted._
 
 @main def run =
-  val tastyFile = "lib/target/scala-3.0.0-RC2/classes/lib/Greetings.tasty"
+  val tastyFile = "lib/target/scala-3.0.0-RC3/classes/lib/Greetings.tasty"
   val tastyContents = Inspector.showCodeOf(tastyFile)
   println(tastyContents)
