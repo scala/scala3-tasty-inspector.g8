@@ -1,14 +1,14 @@
 dotty-tasty-inspector.g8: TASTy Inspector template project
 =================
-[![Build Status](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8.svg?branch=master)](https://travis-ci.org/lampepfl/dotty-tasty-inspector.g8)
+[![Build Status](https://travis-ci.com/scala/scala3-tasty-inspector.g8.svg?branch=master)](https://travis-ci.com/scala/scala3-tasty-inspector.g8)
 
-A [Giter8][g8] template for a minimal [Dotty] TASTy Inspector project.
+A [Giter8][g8] template for a minimal [Scala 3] TASTy Inspector project.
 
 Template usage
 --------------
 Using `sbt` version `1.1.5+`, do:
 ```
-sbt new lampepfl/dotty-tasty-inspector.g8
+sbt new scala/scala3-tasty-inspector.g8
 ```
 in the folder where you want to clone the template.
 
@@ -21,5 +21,5 @@ and neighboring rights to this template to the public domain worldwide.
 This template is distributed without any warranty. See <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 [g8]: http://www.foundweekends.org/giter8/
-[Dotty]: http://dotty.epfl.ch/
+[Scala 3]: http://dotty.epfl.ch/
 [Nicolas Stucki]: https://github.com/nicolasstucki
