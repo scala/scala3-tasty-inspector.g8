@@ -1,4 +1,4 @@
-dotty-tasty-inspector.g8: TASTy Inspector template project
+scala3-tasty-inspector.g8: TASTy Inspector template project
 =================
 [![Build Status](https://travis-ci.com/scala/scala3-tasty-inspector.g8.svg?branch=master)](https://travis-ci.com/scala/scala3-tasty-inspector.g8)
 
