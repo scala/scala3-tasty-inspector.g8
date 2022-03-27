@@ -2,7 +2,7 @@ scala-tasty-inspector.g8: TASTy Inspector template project
 =================
 [![Continuous Integration](https://github.com/scala/scala3-tasty-inspector.g8/actions/workflows/ci.yml/badge.svg)](https://github.com/scala/scala3-tasty-inspector.g8/actions/workflows/ci.yml)
 
-A [Giter8][g8] template for a minimal [Scala 3] TASTy Inspector project.
+A [Giter8][g8] template for a minimal [Scala 3 TASTy Inspector] project.
 
 Template usage
 --------------
@@ -21,5 +21,5 @@ and neighboring rights to this template to the public domain worldwide.
 This template is distributed without any warranty. See <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 [g8]: http://www.foundweekends.org/giter8/
-[Scala 3]: http://dotty.epfl.ch/
+[Scala 3 TASTy Inspector]: https://docs.scala-lang.org/scala3/reference/metaprogramming/tasty-inspect.html
 [Nicolas Stucki]: https://github.com/nicolasstucki
