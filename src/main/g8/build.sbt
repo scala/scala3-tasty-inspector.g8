@@ -8,7 +8,7 @@ lazy val lib = project
 
     scalaVersion := scala3Version,
 
-    libraryDependencies += "com.github.sbt" % "junit-interface" % "0.13.2" % "test"
+    libraryDependencies += "com.github.sbt" % "junit-interface" % "0.13.3" % "test"
   )
 
 lazy val inspector = project
@@ -21,7 +21,7 @@ lazy val inspector = project
 
     libraryDependencies ++= Seq(
       "org.scala-lang" %% "scala3-tasty-inspector" % scala3Version,
-      "com.github.sbt" % "junit-interface" % "0.13.2" % "test"
+      "com.github.sbt" % "junit-interface" % "0.13.3" % "test"
     )
   )
   .dependsOn(lib)
