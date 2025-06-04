@@ -14,7 +14,7 @@ class InspectorTest {
         |    def hello(name: scala.Predef.String): scala.Predef.String = "Hello ".+(name)
         |  }
         |}""".stripMargin,
-      Inspector.showCodeOf("lib/target/scala-3.7.0/classes/lib/Greetings.tasty")
+      Inspector.showCodeOf("lib/target/scala-3.7.1/classes/lib/Greetings.tasty")
     )
 
   }
