@@ -10,11 +10,11 @@ class InspectorTest {
   @Test def test(): Unit = {
     assertEquals(
       """package lib {
-        |  @scala.annotation.internal.SourceFile("lib/src/main/scala/lib/Greetings.scala") object Greetings {
+        |  object Greetings {
         |    def hello(name: scala.Predef.String): scala.Predef.String = "Hello ".+(name)
         |  }
         |}""".stripMargin,
-      Inspector.showCodeOf("lib/target/scala-3.9.0/classes/lib/Greetings.tasty")
+      Inspector.showCodeOf("lib/target/scala-3.10.0/classes/lib/Greetings.tasty")
     )
 
   }

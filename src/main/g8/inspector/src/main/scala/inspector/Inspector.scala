@@ -13,8 +13,7 @@ object Inspector {
       def inspect(using Quotes)(tastys: List[Tasty[quotes.type]]): Unit = {
         import quotes.reflect._
         for tasty <- tastys do
-          val projectDir = new java.io.File( "." ).getCanonicalPath() + java.io.File.separator // To cleanup the paths in @SourceFile
-          tastyStr = tasty.ast.show.replace(projectDir, "")
+          tastyStr = tasty.ast.show
       }
     }
     TastyInspector.inspectTastyFiles(List(tastyFile))(inspector)
