@@ -10,7 +10,7 @@ class InspectorTest {
   @Test def test(): Unit = {
     assertEquals(
       """package lib {
-        |  @scala.annotation.internal.SourceFile("lib/src/main/scala/lib/Greetings.scala") object Greetings {
+        |  object Greetings {
         |    def hello(name: scala.Predef.String): scala.Predef.String = "Hello ".+(name)
         |  }
         |}""".stripMargin,
