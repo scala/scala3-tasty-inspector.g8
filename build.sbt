@@ -3,7 +3,7 @@
 // See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
 import sbt.protocol.testing.TestResult
 
-lazy val scalaVersions = Seq("3.8.4")
+lazy val scalaVersions = Seq("3.10.0")
 lazy val root = project
   .in(file("."))
   .settings(
